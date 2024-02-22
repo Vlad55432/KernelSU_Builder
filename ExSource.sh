@@ -22,10 +22,10 @@ LAVA_URL=$(echo "$json" | jq -r '.["vlad-experimental"].kernel[0]' | cut -d ' ' 
 echo "Lineage URL: $LINEAGE_URL"
 echo "Zenitsu URL: $ZENITSU_URL"
 echo "Divest URL: $DIVEST_URL"
-echo "Divest URL: $LAVA_URL"
+echo "Lava URL: $LAVA_URL"
 
 # Set the extracted URLs as output parameters using the new method
 echo "lineage_url=$LINEAGE_URL" >> $GITHUB_ENV
 echo "zenitsu_url=$ZENITSU_URL" >> $GITHUB_ENV
 echo "divest_url=$DIVEST_URL" >> $GITHUB_ENV
-echo "lava_url=$lava_URL" >> $GITHUB_ENV
+echo "lava_url=$LAVA_URL" >> $GITHUB_ENV

@@ -147,7 +147,7 @@ jobs:
              - LineageOS-20: ${{ env.lineage_url }}
              - Zenitsu: ${{ env.zenitsu_url }}
              - DivestOS-13: ${{ env.divest_url }}
-             - Lava: ${{ env.divest_url }}
+             - Lava: ${{ env.lava_url }}
       
              **Installation:**
              1. Sideloading in recovery mode.
